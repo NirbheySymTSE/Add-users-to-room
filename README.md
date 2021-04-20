@@ -24,12 +24,42 @@ Next, you will be required to have the following:
 These will be required to be passed through to the script so it can be executed.
 
 RSA Key Pair, this will need to come internally from your team who administers your Pod.
-A config.json will be required, an example one has been provided in the repo.
+A config.json will be required in this format:
 
-For certificate based authentication, please swap `"botRSAPath"` and `"botRSAName"`, with `"botCertPath"` and
+```
+{
+  "sessionAuthHost": "YOUR-POD-SUBDOMAIN.symphony.com",
+  "sessionAuthPort": 443,
+  "keyAuthHost": "YOUR-POD-SUBDOMAIN.symphony.com",
+  "keyAuthPort": 443,
+  "podHost": "YOUR-POD-SUBDOMAIN.symphony.com",
+  "podPort": 443,
+  "agentHost": "YOUR-POD-SUBDOMAIN.symphony.com",
+  "agentPort": 443,
+  "botRSAPath": "PATH",
+  "botRSAName": "BOT-RSA-NAME",
+  "botCertPassword": "BOT-PASSWORD",
+  "botUsername": "BOT-USERNAME",
+  "botEmailAddress": "BOT-EMAIL",
+  "appCertPath": "",
+  "appCertName": "",
+  "appCertPassword": "",
+  "proxyURL": "",
+  "proxyUsername": "",
+  "proxyPassword": "",
+  "authTokenRefreshPeriod": "30",
+  "truststorePath": ""
+}
+```
+
+**For certificate based authentication**
+
+Please swap `"botRSAPath"` and `"botRSAName"`, with `"botCertPath"` and
 `"botCertName"`. 
 
-NOTE: In the example config, replace the domain URLs and port numbers to reflect your internal Pod URLs and ports.
+You may also need to switch `YOUR-POD-SUBDOMAIN.symphony.com` to `YOUR-POD-SUBDOMAIN-api.symphony.com` for SessionAuthHost and KeyAuthHost.
+
+**NOTE: In the example config, replace the domain URLs and port numbers to reflect your internal Pod URLs and ports.**
 
 ###Running the script
 To execute the script please go to the directory where you have saved the files (RSA keypair, config.json) and run the following command:
