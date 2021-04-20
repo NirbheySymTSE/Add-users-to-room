@@ -7,8 +7,6 @@ application-*.yaml
 *.gz
 .script
 *.pem
-*.json
-config*.json
 rsa
 resources/rsa
 application.properties
