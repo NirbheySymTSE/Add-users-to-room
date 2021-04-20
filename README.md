@@ -10,10 +10,14 @@ These can be found here: https://github.com/SymphonyPlatformSolutions/symphony-a
 This file has already been added in this Repository.
 
 To install it, you will need to save it as requirements.txt and install it via the pip command:
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
 Second, you will need to install the Python SDK:
-`pip install symphony-api-client-python`
+```
+pip install symphony-api-client-python
+```
 
 ### Setup config.json and RSA
 Next, you will be required to have the following:
@@ -63,4 +67,6 @@ You may also need to switch `YOUR-POD-SUBDOMAIN.symphony.com` to `YOUR-POD-SUBDO
 
 ###Running the script
 To execute the script please go to the directory where you have saved the files (RSA keypair, config.json) and run the following command:
-`python obtain_room_information.py --auth "rsa" --config "/path/to/config.json"`
+```
+python add-users-to-room.py --auth "rsa" --config "/path/to/config.json" --csv "/path/to/userIDs.csv" --stream "{streamID}"
+```
