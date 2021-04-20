@@ -24,11 +24,17 @@ Next, you will be required to have the following:
 
 * RSA Key Pair
 * config.json
+* userIDs.csv
   
 These will be required to be passed through to the script so it can be executed.
 
-RSA Key Pair, this will need to come internally from your team who administers your Pod.
-A config.json will be required in this format:
+**RSA Key Pair**
+
+This will need to come internally from your team who administers your Pod.
+
+**config.json**
+
+This will be required in this format:
 
 ```
 {
@@ -63,7 +69,20 @@ Please swap `"botRSAPath"` and `"botRSAName"`, with `"botCertPath"` and
 
 You may also need to switch `YOUR-POD-SUBDOMAIN.symphony.com` to `YOUR-POD-SUBDOMAIN-api.symphony.com` for SessionAuthHost and KeyAuthHost.
 
-**NOTE: In the example config, replace the domain URLs and port numbers to reflect your internal Pod URLs and ports.**
+NOTE: In the example config, replace the domain URLs and port numbers to reflect your internal Pod URLs and ports.
+
+**userIDs.csv**
+
+This file needs to be formatted in the following way with the userIDs of each account to be added to the room:
+
+```
+userID1
+userID2
+userID3
+userID4
+userID5
+...
+```
 
 ###Running the script
 To execute the script please go to the directory where you have saved the files (RSA keypair, config.json) and run the following command:
