@@ -84,7 +84,7 @@ userID5
 ...
 ```
 
-###Running the script
+### Running the script
 To execute the script please go to the directory where you have saved the files (RSA keypair, config.json) and run the following command:
 ```
 python add-users-to-room.py --auth "rsa" --config "/path/to/config.json" --csv "/path/to/userIDs.csv" --stream "{streamID}"
