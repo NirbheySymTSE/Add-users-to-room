@@ -12,7 +12,6 @@ resources/rsa
 application.properties
 config.json
 .DS_Store
-.DS_Store
 *.properties
 src/main/resources/config.json
 src/main/resources/application.properties
