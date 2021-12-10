@@ -1,11 +1,13 @@
 # Add-users-to-room
-This script will automates the process of adding users into a room. It takes in a CSV of userIDs; a configuration of pod, authentication keys/certs, and service account; and a roomID.
+This script will automate the process of adding users into a room. It takes in a CSV of userIDs; a configuration of pod, authentication keys/certs, and service account; and a roomID.
 
 This script uses Python to function, please install it before attempting to run this.
 
+**Please note this is an unsupported script, it has been developed as a guideline for you to adapt.**
+
 ### Install dependencies and Symphony Python SDK
 You will need to install the requirements of the Python SDK (requirements.txt) file.
-These can be found here: https://github.com/SymphonyPlatformSolutions/symphony-api-client-python/blob/master/requirements.txt
+These can be found here: https://github.com/finos/symphony-bdk-python/blob/legacy/requirements.txt
 
 This file has already been added in this Repository.
 
@@ -16,7 +18,7 @@ pip install -r requirements.txt
 
 Second, you will need to install the Python SDK:
 ```
-pip install symphony-api-client-python
+pip install sym-api-client-python
 ```
 
 ### Setup config.json and RSA
